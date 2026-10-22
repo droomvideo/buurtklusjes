@@ -27,6 +27,16 @@
   .groot{font-size:4em;text-align:center}
   .tekst{font-size:1.1em;line-height:1.6}
   .tekst li{margin-bottom:6px}
+  header h1 .zwaai{display:inline-block;animation:zwaai 2s infinite;transform-origin:70% 70%}
+  @keyframes zwaai{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-8deg)}}
+  .kaart:hover .emoji{animation:hup .5s}
+  @keyframes hup{50%{transform:translateY(-8px) scale(1.15)}}
+  .stappen{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+  .stap{background:#eef5f0;border-radius:10px;padding:14px}
+  .stap b{display:block;font-size:1.6em;color:#2e7d4f}
+  .weetje{background:#fff8dc;border-left:5px solid #f2c94c;border-radius:10px;padding:16px 20px;margin-top:20px;text-align:left}
+  .lijst{list-style:none;padding:0;text-align:left;display:inline-block}
+  .lijst li{margin:6px 0}
 </style>
 </head>
 <body>
@@ -45,6 +55,7 @@
       <ul><li>Binnen en in de tuin.</li><li>Vertel me even hoeveel water elke plant nodig heeft.</li><li>Ook handig als je op vakantie bent.</li></ul>
     </div>
   </div>
+  <div class="weetje"><b>💡 Wist je dat?</b><br>Te veel water is voor veel kamerplanten slechter dan te weinig. Daarom vraag ik even hoeveel water elke plant nodig heeft. 💧</div>
   <div class="blok">
     <h2>📅 Wanneer?</h2>
     <p>Op zaterdag en zondag. Je betaalt contant als de klus klaar is.</p>

@@ -27,11 +27,21 @@
   .groot{font-size:4em;text-align:center}
   .tekst{font-size:1.1em;line-height:1.6}
   .tekst li{margin-bottom:6px}
+  header h1 .zwaai{display:inline-block;animation:zwaai 2s infinite;transform-origin:70% 70%}
+  @keyframes zwaai{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(14deg)}20%,40%{transform:rotate(-8deg)}}
+  .kaart:hover .emoji{animation:hup .5s}
+  @keyframes hup{50%{transform:translateY(-8px) scale(1.15)}}
+  .stappen{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:10px}
+  .stap{background:#eef5f0;border-radius:10px;padding:14px}
+  .stap b{display:block;font-size:1.6em;color:#2e7d4f}
+  .weetje{background:#fff8dc;border-left:5px solid #f2c94c;border-radius:10px;padding:16px 20px;margin-top:20px;text-align:left}
+  .lijst{list-style:none;padding:0;text-align:left;display:inline-block}
+  .lijst li{margin:6px 0}
 </style>
 </head>
 <body>
 <header>
-  <h1>Bram's Buurtklusjes</h1>
+  <h1><span class="zwaai">👋</span> Bram's Buurtklusjes</h1>
   <p>Hulp nodig in de buurt? Ik regel het.</p>
 </header>
 <main>
@@ -43,6 +53,25 @@
     <a class="kaart" href="konijn-cavia.html"><div class="emoji">🐹</div><h3>Konijn of cavia verzorgen</h3><p>Eten, water en een schoon hokje.</p><span class="prijs">€2 per keer</span><div class="meer">Meer uitleg →</div></a>
     <a class="kaart" href="boodschappen.html"><div class="emoji">🛍️</div><h3>Boodschappen dragen</h3><p>Ik help je tassen naar binnen.</p><span class="prijs">€1 per keer</span><div class="meer">Meer uitleg →</div></a>
     <a class="kaart" href="glasbak.html"><div class="emoji">🍾</div><h3>Naar de glasbak</h3><p>Ik breng je flessen weg.</p><span class="prijs">€1 per keer</span><div class="meer">Meer uitleg →</div></a>
+  </div>
+
+  <div class="blok">
+    <h2>🔧 Hoe werkt het?</h2>
+    <div class="stappen">
+      <div class="stap"><b>1</b>Kies een klusje dat je wilt laten doen.</div>
+      <div class="stap"><b>2</b>Stuur me een mailtje, dan spreken we een dag en tijd af.</div>
+      <div class="stap"><b>3</b>Ik doe de klus en je betaalt contant als hij klaar is.</div>
+    </div>
+  </div>
+
+  <div class="blok">
+    <h2>⭐ Waarom ik?</h2>
+    <ul class="lijst">
+      <li>✅ Ik kom op tijd en doe wat we afspreken.</li>
+      <li>🐾 Ik ben gek op dieren en ga er voorzichtig mee om.</li>
+      <li>😊 Ik woon in de buurt, dus ik ben er snel.</li>
+      <li>💶 Eerlijke prijzen, en je betaalt pas als het klaar is.</li>
+    </ul>
   </div>
 
   <div class="blok">
